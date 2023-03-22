@@ -11,12 +11,24 @@
 </head>
 
 <body>
-    <header></header>
     <main>
         <div id="welcome-section">
-            <h1>This is Premraj Patil</h1>
+            <header class="header">
+                <h1 class="name">Premraj Patil</h1>
+                <nav class="nav-bar">
+                    <a href="#education" class="link">Academics</a>
+                    <a href="#skills" class="link">Skills</a>
+                    <a href="#projects" class="link">Projects</a>
+                    <a href="#connect-me" class="link"> Contact</a>
+                </nav>
+            </header>
+            <img id="profile-picture" src="img/IMG20220928203015.jpg" alt="profile-picture">
+            <p class="intro">Winning isn’t everything, but wanting to win is. <span>Heyy! This is Premraj Patil. I'm a
+                    software engineer eager to learn something new every other day.</span></p>
         </div>
+
         <hr>
+
         <div id="education">
             <h2>Education</h2>
             <section class="educational-background">
@@ -39,28 +51,48 @@
         <div id="skills">
             <h2>Skills</h2>
             <section class="section-1">
-                <p class="p">C++</p>
-                <div class="c++ container"></div>
-                <p class="p">Java</p>
-                <div class="java container"></div>
-                <p class="p">HTML5</p>
-                <div class="html container"></div>
-                <p class="p">CSS3</p>
-                <div class="css container"></div>
-                <p class="p">JavaScript</p>
-                <div class="javascript container"></div>
-                <p class="p">SQL</p>
-                <div class="sql container"></div>
+                <article class="skill">
+                    <p class="p">C++</p>
+                    <div class="c++ container"></div>
+                </article>
+                <article class="skill">
+                    <p class="p">Java</p>
+                    <div class="java container"></div>
+                </article>
+                <article class="skill">
+                    <p class="p">HTML5</p>
+                    <div class="html container"></div>
+                </article>
+                <article class="skill">
+                    <p class="p">CSS3</p>
+                    <div class="css container"></div>
+                </article>
+                <article class="skill">
+                    <p class="p">JavaScript</p>
+                    <div class="javascript container"></div>
+                </article>
+                <article class="skill">
+                    <p class="p">SQL</p>
+                    <div class="sql container"></div>
+                </article>
             </section>
             <section class="section-2">
-                <p class="p">DSA</p>
-                <div class="dsa container"></div>
-                <p class="p">Frontend Development</p>
-                <div class="frontend-dev container"></div>
-                <p class="p">Computer Networks</p>
-                <div class="cn container"></div>
-                <p class="p">Operating System</p>
-                <div class="os container"></div>
+                <article class="skill">
+                    <p class="p">DSA</p>
+                    <div class="dsa container"></div>
+                </article>
+                <article class="skill">
+                    <p class="p">Frontend Development</p>
+                    <div class="frontend-dev container"></div>
+                </article>
+                <article class="skill">
+                    <p class="p">Computer Networks</p>
+                    <div class="cn container"></div>
+                </article>
+                <article class="skill">
+                    <p class="p">Operating System</p>
+                    <div class="os container"></div>
+                </article>
             </section>
         </div>
         <hr>
@@ -76,7 +108,7 @@
         <p>“It always seems impossible until it is done.”</p>
         <p>– Nelson Mandela</p>
 
-        <div class="connect-me">
+        <div id="connect-me">
             <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-instagram"></a>
             <a href="#" class="fa fa-linkedin"></a>

@@ -1,13 +1,47 @@
 body {
     margin: 0;
+    background: linear-gradient(135deg, #000000d8, #08082dff);
+    color: white;
+}
+
+.name {
+    display: inline-block;
+}
+
+header:hover {
+    background-color: black;
+}
+
+#profile {
+    display: inline-block;
+}
+
+.intro {
+    background: linear-gradient(135deg, #ffe53b, #ff2525);
+    background-color: tomato;
+    font-size: 30px;
+    width: 200px;
+    height: 350px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-left: 30vh;
+}
+
+.nav-bar {
+    display: inline-block;
+    background-color: white;
+    margin-left: 80vw;
+}
+
+#profile-picture {
+    height: 375px;
+    border-radius: 5%;
 }
 
 #welcome-section {
     height: 100vh;
-}
-
-#educational-background {
-    height: 100vh;
+    border-radius: 5%;
+    margin: 5px;
 }
 
 h1 {
@@ -40,19 +74,34 @@ div.container {
     border-radius: 25px;
 }
 
-p.p{
+p.p {
     margin-left: 10px;
     margin-bottom: 5px;
 }
 
-.educational-background{
+.educational-background {
     padding-left: 20px;
+    background-color: blue;
+    width: 300px;
+    border-radius: 10px;
 }
 
-.fa{
+.fa {
     margin: 20px;
 }
-footer{
+
+footer {
     text-align: center;
-    height: 100vh;
+    /* height: 100vh; */
+}
+
+a {
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+}
+
+.skill {
+    background-color: blue;
+    width: 250px;
 }
