@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: black;
+}
+
+nav {
+    border: 2px solid black;
+    margin: 30px;
+}
+
+h1 {
+    border: 2px solid black;
+    margin: 0;
+    display: inline;
+}
+
+#welcome-section {
+    border: 2px solid black;
+    margin: 30px;
+    border-radius: 20px;
+    height: 100vh;
+    /* background-color: black; */
+}
+
+.header {
+    border: 2px solid black;
+    margin: 10px;
+    display: flex;
+}
+
+a {
+    border: 2px solid black;
+    margin: 10px;
+}
+
+img {
+    height: 50vh;
+    border-radius: 50%;
+
+}
+
+.intro {
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.left1 {
+    border: 2px solid black;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30vw;
+}
+
+.right1 {
+    border: 2px solid black;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+}
+
+#education {
+    border: 2px solid black;
+    margin: 30px;
+    border-radius: 20px;
+    display: flex;
+}
+
+.educational-background {
+    border: 2px solid black;
+    margin: 10px;
+    width: 500px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+/* h3 {
+    border: 2px solid black;
+    margin: 10px; 
+} */
+
+p {
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.p {
+    border: 2px solid black;
+    margin: 10px;
+    display: inline;
+}
+
+.footer p {
+    border: 2px solid black;
+    margin: 10px;
+}
+
+h2 {
+    border: 2px solid black;
+    margin: 10px;
+    display: inline;
+}
+
+#skills {
+    border: 2px solid black;
+    margin: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill {
+    border: 2px solid black;
+    margin: 10px;
+    width: 300px;
+}
+
+.left2 {
+    border: 2px solid black;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.middle2{
+    border: 2px solid black;
+    margin: 10px; 
+    display: flex;
+    align-items: center;
+}
+
+.right2 {
+    border: 2px solid black;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container {
+    width: 250px;
+    height: 20px;
+    background-color: black;
+    margin: 10px;
+}
+
+.section-1 {
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.section-2 {
+    border: 2px solid black;
+    margin: 10px;
+}
+
+#projects {
+    border: 2px solid black;
+    margin: 30px;
+    border-radius: 20px;
+}
+
+footer {
+    border: 2px solid black;
+    margin: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
