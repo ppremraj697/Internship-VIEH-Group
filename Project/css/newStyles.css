@@ -4,31 +4,47 @@
 
 body {
     color: black;
+    margin: 0;
 }
 
 nav {
-    border: 2px solid black;
-    margin: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.link {
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 20px ;
 }
 
 h1 {
-    border: 2px solid black;
     margin: 0;
+    padding: 15px;
     display: inline;
+    font-size: 50px;
 }
 
 #welcome-section {
     border: 2px solid black;
-    margin: 30px;
-    border-radius: 20px;
     height: 100vh;
-    /* background-color: black; */
 }
 
 .header {
     border: 2px solid black;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.div1 {
     margin: 10px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
 }
 
 a {
@@ -39,16 +55,18 @@ a {
 img {
     height: 50vh;
     border-radius: 50%;
-
+    margin: 50px;
 }
 
 .intro {
-    border: 2px solid black;
     margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 40px;
+    width: 30%;
 }
 
 .left1 {
-    border: 2px solid black;
     margin: 10px;
     display: flex;
     align-items: center;
@@ -57,7 +75,6 @@ img {
 }
 
 .right1 {
-    border: 2px solid black;
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -75,24 +92,15 @@ img {
 .educational-background {
     border: 2px solid black;
     margin: 10px;
-    width: 500px;
+    width: 600px;
     border-radius: 20px;
     padding: 20px;
-}
-
-/* h3 {
-    border: 2px solid black;
-    margin: 10px; 
-} */
-
-p {
-    border: 2px solid black;
-    margin: 10px;
+    font-size: 20px;
 }
 
 .p {
-    border: 2px solid black;
     margin: 10px;
+    font-size: 20px;
     display: inline;
 }
 
@@ -105,6 +113,9 @@ h2 {
     border: 2px solid black;
     margin: 10px;
     display: inline;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 30px;
 }
 
 #skills {
@@ -115,29 +126,27 @@ h2 {
     justify-content: space-around;
 }
 
-.skill {
+article {
     border: 2px solid black;
     margin: 10px;
     width: 300px;
+    border-radius: 10px;
 }
 
 .left2 {
-    border: 2px solid black;
     margin: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.middle2{
-    border: 2px solid black;
-    margin: 10px; 
+.middle2 {
+    margin: 10px;
     display: flex;
     align-items: center;
 }
 
 .right2 {
-    border: 2px solid black;
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -149,22 +158,73 @@ h2 {
     height: 20px;
     background-color: black;
     margin: 10px;
+    /* background: linear-gradient(90deg, black 50%, white 50%); */
+    border-radius: 5px;
+    border: 1px solid black;
 }
 
-.section-1 {
-    border: 2px solid black;
-    margin: 10px;
+.c {
+    background: linear-gradient(90deg, black 60%, white 40%);
+    color: white;
 }
 
-.section-2 {
-    border: 2px solid black;
-    margin: 10px;
+.java {
+    background: linear-gradient(90deg, black 40%, white 40%);
+    color: white;
+}
+
+.html {
+    background: linear-gradient(90deg, black 80%, white 20%);
+    color: white;
+}
+
+.css {
+    background: linear-gradient(90deg, black 70%, white 30%);
+    color: white;
+}
+
+.javascript {
+    background: linear-gradient(90deg, black 40%, white 40%);
+    color: white;
+}
+
+.dsa {
+    background: linear-gradient(90deg, black 40%, white 40%);
+    color: white;
+}
+
+.frontend-dev {
+    background: linear-gradient(90deg, black 50%, white 50%);
+    color: white;
+}
+
+.cn {
+    background: linear-gradient(90deg, black 70%, white 30%);
+    color: white;
+}
+
+.os {
+    background: linear-gradient(90deg, black 70%, white 30%);
+    color: white;
+}
+
+.sql {
+    background: linear-gradient(90deg, black 70%, white 30%);
+    color: white;
 }
 
 #projects {
     border: 2px solid black;
     margin: 30px;
     border-radius: 20px;
+    display: flex;
+
+}
+
+.project-tile {
+    height: 100px;
+    width: 90px;
+    border: 3px solid black;
 }
 
 footer {
@@ -174,4 +234,37 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 60vh;
+    justify-content: space-evenly;
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 20px;
+}
+
+#connect-me {
+display: flex;
+}
+
+.social-media {
+    border: 2px solid black;
+    margin: 10px;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.btn{
+    border: none;
+    text-decoration: none;
+}
+
+.p-footer{
+    font-size: 20px;
 }
