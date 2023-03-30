@@ -17,6 +17,40 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Vidaloka&display=swap" rel="stylesheet">
+
+    <!-- scroll effect using JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -32,7 +66,7 @@
                 </nav>
             </header>
             <div class="div1">
-                <img id="profile-picture" src="img/fotor_2023-3-26_22_10_28.jpg" alt="profile-picture">
+                <img id="profile-pic" src="img/fotor_2023-3-26_22_10_28.jpg" alt="profile-picture">
                 <p class="intro">“Winning isn’t everything, but wanting to win is.” Heyy! This is Premraj Patil. I'm
                     a Software Engineer eager to learn something new every other day.</p>
             </div>
@@ -41,7 +75,7 @@
 
         <div id="education">
             <div class="left1">
-                <h2>Education</h2>
+                <h2 class="education">Education</h2>
             </div>
             <div class="right1">
                 <section class="educational-background">
@@ -86,7 +120,7 @@
                 </article>
             </div>
             <div class="middle2">
-                <h2>Skills</h2>
+                <h2 class="skills">Skills</h2>
             </div>
             <div class="right2">
                 <article class="skill">
@@ -95,7 +129,7 @@
                 </article>
                 <article class="skill">
                     <p class="p">Frontend Development</p>
-                    <div class="frontend-dev container">5/10</div>
+                    <div class="frontend-dev container">4/10</div>
                 </article>
                 <article class="skill">
                     <p class="p">Computer Networks</p>
@@ -112,20 +146,36 @@
             </div>
         </div>
 
-        <!-- <div id="projects">
-            <h2>Projects</h2>
-            <div class="project-tile"></div>
-            <div class="project-tile"></div>
-            <div class="project-tile"></div>
-        </div> -->
+        <div id="projects">
+            <div class="project-div">
+                <h2 class="project">Projects</h2>
+            </div>
+            <div class="projects">
+                <div class="project-tile">
+                    <img src="https://store-images.s-microsoft.com/image/apps.2005.14057826194083709.67242c47-4fd7-4f1a-9dd6-5d93f6cc10df.f80f14c0-72ab-46ff-86cd-9d801c8e04e8?mode=scale&q=90&h=300&w=300"
+                        alt="tic-tac-toe-image" class="project-img">
+                    <a href="https://firstproject-premraj.netlify.app" target="_blank" class="project-name">Tic Tac Toe Game</a>
+                </div>
+                <div class="project-tile">
+                    <img src="https://thumbs.dreamstime.com/b/projects-concept-black-chalkboard-d-rendering-handwritten-top-view-office-desk-lot-business-office-supplies-79906734.jpg"
+                        alt="" class="project-img">
+                    <a href="project-2.html" target="_blank" class="project-name">Project-2</a>
+                </div>
+                <div class="project-tile">
+                    <img src="https://thumbs.dreamstime.com/b/projects-concept-black-chalkboard-d-rendering-handwritten-top-view-office-desk-lot-business-office-supplies-79906734.jpg"
+                        alt="" class="project-img">
+                    <a href="project-3.html" target="_blank" class="project-name">Project-3</a>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <footer>
-        <h2>Premraj Patil</h2>
+    <footer class="footer">
+        <h2 class="footer-name">Premraj Patil</h2>
 
         <div id="connect-me">
-            <div class="social-media"><a href="https://www.facebook.com/premraj.patil.988" class="fa fa-facebook fa-2x btn"
-                    target="_blank"></a>
+            <div class="social-media"><a href="https://www.facebook.com/premraj.patil.988"
+                    class="fa fa-facebook fa-2x btn" target="_blank"></a>
             </div>
             <div class="social-media"> <a href="https://instagram.com/premraj9864?igshid=ZDdkNTZiNTM="
                     class="fa fa-instagram fa-2x btn" target="_blank"></a></div>
@@ -143,9 +193,7 @@
             “It always seems impossible until it is done.”
         </strong>
 
-        <p class="p-footer">&copy created by Premraj Patil</p>
-        <!-- <p class="footer">This Portfolio Website is under development</p> -->
-
+        <p class="copyright">&copy created by Premraj Patil</p>
     </footer>
 </body>
 
